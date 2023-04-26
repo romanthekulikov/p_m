@@ -1,0 +1,46 @@
+.area-wrapper
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.area-wrapper:hover
+{
+    cursor: pointer;
+}
+
+.area-wrapper:active
+{
+    border-color: #7fda00;
+    cursor: move;
+}
+
+.area-wrapper-scale
+{
+    display: flex;
+    position: absolute;
+    transform-origin: 0 0;
+}
+
+.area-wrapper,
+.area-wrapper-scale
+{
+    display: flex;
+    position: absolute;
+    border: 10px solid transparent;
+    caret-color: transparent;
+}
+
+.dragged
+{
+    opacity: 0.2;
+}
+
+.area-wrapper-selected
+{
+    border-color: #132000;
+    resize: both;
+    overflow: hidden;
+    min-width: 30px;
+    min-height: 30px;
+}

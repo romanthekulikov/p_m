@@ -1,0 +1,16 @@
+.control-panel
+{
+    padding: 4px 200px 6px 30px;
+    display: flex;
+    border-radius: 10px;
+    justify-content:left;
+    flex-wrap: wrap;
+    background: #448808;
+}
+
+.fileInput
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+}

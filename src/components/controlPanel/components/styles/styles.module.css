@@ -1,0 +1,46 @@
+.presentation-name
+{
+    flex: 1 0 100%;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.presentation-name-input
+{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    height: 35px;
+    min-width: 240px;
+    padding: 2px 17px;
+    margin: 0 0 10px 10px;
+    font-size: 23px;
+    caret-color: transparent;
+}
+
+.presentation-name-input:focus
+{
+    border-color: rgb(var(--almost-black-color));
+}
+
+.presentation-name-input::placeholder
+{
+    text-align: center;
+}
+
+.message
+{
+    display: none;
+    font-size: 23px; 
+    margin-left: 40px; 
+    color: rgb(255, 10, 10);
+    text-shadow: 
+        0px 4px 3px rgb(var(--black-color), 0.4),
+        0px 8px 13px rgb(var(--black-color), 0.1),
+        0px 18px 23px rgb(var(--black-color), 0.1);
+}
+
+.message-active
+{
+    display: inline-block;
+}

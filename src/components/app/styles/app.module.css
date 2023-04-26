@@ -1,0 +1,18 @@
+:root
+{
+    --black-color: 0, 0, 0;
+    --almost-black-color: 0, 23, 31;
+    --dark-blue-color: 0, 52, 89;
+    --blue-color: 0, 126, 167;
+    --light-blue-color: 0, 168, 232;
+    --silver-color: 192, 192, 192;
+    --white-color: 255, 255, 255;
+}
+
+.app
+{
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    height: 100vh;
+}

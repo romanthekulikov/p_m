@@ -1,0 +1,36 @@
+.pop-up-inactive,
+.pop-up-active
+{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(var(--black-color), 0.5);
+    z-index: 9999;
+}
+
+.pop-up-active
+{
+    display: flex;
+}
+
+.pop-up-inactive
+{
+    display: none;
+}
+
+.pop-up
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(var(--black-color));
+    border-radius: 20px;
+    background-color: rgb(var(--white-color));
+    width: 750px;
+    height: 600px;
+    font: 400 35px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

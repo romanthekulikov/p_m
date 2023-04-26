@@ -1,0 +1,36 @@
+.workboard
+{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 50px 150px;
+    width: 100%;
+    border: 0px solid rgb(var(--almost-black-color), 0.7);
+    border-left-width: 2px;
+    background-color: rgb(var(--silver-color), 0.2);
+}
+
+.workboard__slide,
+.workboard__without-slide
+{
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    min-width: 219px;
+    min-height: 125px;
+}
+
+.workboard__slide
+{
+    background-color: rgb(var(--white-color));
+    border: 1px solid rgb(var(--almost-black-color), 0.7);
+    box-shadow: 0px 3px 7px 0px rgba(var(--black-color), 0.5);
+}
+
+.workboard__without-slide
+{
+    border: 4px solid rgb(var(--almost-black-color), 0.7);
+    border-radius: 10px;
+    box-shadow: none;
+}

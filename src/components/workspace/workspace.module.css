@@ -1,0 +1,7 @@
+.workspace
+{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}

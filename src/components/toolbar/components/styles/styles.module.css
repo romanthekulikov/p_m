@@ -1,0 +1,240 @@
+.image-selector {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(var(--black-color), 0.3);
+}
+
+.image-selector__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 250px auto;
+    max-width: 450px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(var(--black-color));
+    border-radius: 15px;
+    background-color: rgb(var(--white-color));
+}
+
+.image-base {
+    margin-top: 50px;
+    width: 80%;
+    height: 100%;
+    max-height: 50px;
+    border: 1px solid rgb(var(--silver-color));
+    border-radius: 5px;
+}
+
+.image-base:hover {
+    background-color: rgb(var(--light-blue-color), 0.3);
+}
+
+.image-base:active {
+    background-color: rgb(var(--blue-color), 0.7);
+    border-color: rgb(var(--almost-black-color));
+}
+
+.input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.image-base__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font: normal 19px 'Signika', sans-serif;
+}
+
+.image-url {
+    margin-top: 15px;
+    padding: 5px;
+    width: 80%;
+    height: 100%;
+    max-height: 50px;
+    font: normal 19px 'Signika', sans-serif;
+    border: 1px solid rgb(var(--silver-color));
+    border-radius: 5px;
+    outline: none;
+}
+
+.image-url::placeholder {
+    text-align: center;
+}
+
+.button-image-add {
+    margin-top: 5px;
+    width: 40%;
+    height: 100%;
+    max-height: 40px;
+    font: normal 17px 'Signika', sans-serif;
+    background-color: rgb(var(--silver-color), 0.2);
+    border: 1px solid rgb(var(--silver-color));
+    border-radius: 5px;
+}
+
+.button-image-add:hover {
+    background-color: rgb(var(--silver-color), 0.3);
+}
+
+.button-image-add:active {
+    background-color: rgb(var(--silver-color), 0.5);
+}
+
+.button-ready {
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    height: 100%;
+    max-height: 40px;
+    font: normal 17px 'Signika', sans-serif;
+    background-color: #6fca00;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.text-stroke-color {
+    background-image: url("./../../images/strokeColor.svg");
+    background-size: 130%;
+}
+
+.text-stroke-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12px;
+    width: 72px;
+    height: 28px;
+    border: 2px solid rgb(var(--almost-black-color), 0.7);
+    border-radius: 3px;
+}
+
+.stroke-width-icon {
+    width: 33px;
+    height: 28px;
+    border-right: 2px solid rgb(var(--almost-black-color), 0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./../../images/strokeWidth.svg");
+    background-size: 110%;
+}
+
+.stroke-width {
+    text-align: center;
+    outline: none;
+    border-width: 0;
+    width: 35px;
+    height: 24px;
+}
+
+.stroke-width:focus {
+    border: 2px solid rgb(var(--blue-color));
+    border-radius: 4px;
+}
+
+.stroke-width::-webkit-outer-spin-button,
+.stroke-width::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.error-message-inactive {
+    display: none;
+}
+
+.error-message-active {
+    display: flex;
+    font-size: 18px;
+    color: red;
+}
+
+.color-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-color-button {
+    background-image: url("../../images/icon-color.png");
+    background-size: 70%;
+}
+
+.text-color-button {
+    background-image: url("../../images/textColor.svg");
+    background-size: 100%;
+}
+
+.text-stroke-color-button {
+    background-image: url("../../images/strokeColor.svg");
+    background-size: 130%;
+}
+
+.primitive-color-button {
+    background-image: url("../../images/graphicPrimitiveColor.svg");
+    background-size: 100%;
+}
+
+.primitive-stroke-color-button {
+    background-image: url("../../images/graphicPrimitiveStrokeColor.svg");
+    background-size: 130%;
+}
+
+.content
+{
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(var(--white-color));
+    overflow-y: scroll;
+    border: 1px solid rgb(var(--dark-blue-color));
+    border-radius: 5px;
+    margin-top: 27px;
+    margin-left: 10px;
+    width: 171px;
+    height: 250px;
+    z-index: 1;
+}
+
+.content-inactive
+{
+    display: none;
+}
+
+.content-active
+{
+    display: flex;
+}
+
+.content a
+{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+    min-height: 25px;
+}
+
+.content a:hover
+{
+    cursor: pointer;
+    background-color: rgb(var(--silver-color), 0.4);
+}
+
+.content a:active
+{
+    background-color: rgb(var(--silver-color), 0.8);
+}
